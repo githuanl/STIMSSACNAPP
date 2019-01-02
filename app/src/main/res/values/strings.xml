@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">智慧工厂</string>
+    <string name="msg_load_ing">加载数据中..</string>
+
+
+    <string name="r_t_gg">规&#12288;&#12288;格:</string>
+    <string name="r_t_bm">编&#12288;&#12288;码:</string>
+    <string name="r_t_bmen">部&#12288;&#12288;门:</string>
+    <string name="r_t_tmh">二&#8197;&#8197;维&#8197;&#8197;码:</string>
+    <string name="r_t_xs">数量/辅:</string>
+    <string name="r_t_gys">供&#8197;&#8197;应&#8197;&#8197;商:</string>
+    <string name="r_t_hsl">换&#8197;&#8197;算&#8197;&#8197;率:</string>
+    <string name="r_t_kwh">库&#8197;&#8197;位&#8197;&#8197;号:</string>
+    <string name="r_t_yfh">已&#8197;&#8197;发&#8197;&#8197;货:</string>
+    <string name="r_t_pch">批&#8197;&#8197;次&#8197;&#8197;号:</string>
+    <string name="r_t_kf">库&#12288;&#12288;房:</string>
+    <string name="r_t_rks">入&#8197;&#8197;库&#8197;&#8197;数:</string>
+    <string name="r_t_hgs">合&#8197;&#8197;格&#8197;&#8197;数:</string>
+    <string name="r_t_kw">库&#12288;&#12288;位:</string>
+    <string name="r_t_sl">数&#12288;&#12288;量:</string>
+    <string name="r_t_jsr">经&#8197;&#8197;手&#8197;&#8197;人:</string>
+
+    <!--&#32; == 普通的英文半角空格-->
+
+    <!--&#160; == &nbsp; == &#xA0; == no-break space （普通的英文半角空格但不换行）-->
+
+    <!--&#12288; == 中文全角空格 （一个中文宽度）-->
+
+    <!--&#8194; == &ensp; == en空格 （半个中文宽度）-->
+
+    <!--&#8195; == &emsp; == em空格 （一个中文宽度）-->
+
+    <!--&#8197; == 四分之一em空格 （四分之一中文宽度）-->
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_titilebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="领用单号:" />
+
+            <TextView
+                android:id="@+id/scmid_"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="申请单位:" />
+
+            <TextView
+                android:id="@+id/manudept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_checked"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/allbg" />
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="物料编码:" />
+
+            <TextView
+                android:id="@+id/souceid"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="物料名称:" />
+
+            <TextView
+                android:id="@+id/material"
+                style="@style/wj_r_t"
+                android:textColor="#008ED9" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="规格型号:" />
+
+            <TextView
+                android:id="@+id/stand"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="申  请  数:" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/measure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="已  发  货:" />
+
+            <TextView
+                android:id="@+id/squantity"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="批  次  号:" />
+
+            <TextView
+                android:id="@+id/serial"
+                style="@style/wj_r_t"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="供 应 商:" />
+
+            <TextView
+                android:id="@+id/store_place"
+                style="@style/wj_r_t"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="本次发货:" />
+
+            <EditText
+                android:id="@+id/squantity_"
+                style="@style/wj_r_t"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_forced"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/wj_confirm"
+            android:gravity="center"
+            android:text="强制完成"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/wj_confirm"
+            android:gravity="center"
+            android:text="出库"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

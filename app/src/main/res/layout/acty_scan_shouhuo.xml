@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ll_content_style"
+                android:background="@color/white">
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="@string/r_t_tmh" />
+
+                    <TextView
+                        android:id="@+id/scmid"
+                        style="@style/wj_r_t"
+                        android:layout_weight="3" />
+
+                    <TextView
+                        android:id="@+id/tv_checked"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="@string/r_t_gys" />
+
+                    <TextView
+                        android:id="@+id/supply"
+                        style="@style/wj_r_t"
+                        android:singleLine="false" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="供应商编号:" />
+
+                    <TextView
+                        android:id="@+id/suid"
+                        style="@style/wj_r_t"
+                        android:singleLine="false" />
+                </LinearLayout>
+
+                <include layout="@layout/view_height" />
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="物料编码:" />
+
+                    <TextView
+                        android:id="@+id/materialid"
+                        style="@style/wj_r_t" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="物料名称:" />
+
+                    <TextView
+                        android:id="@+id/material"
+                        style="@style/wj_r_t"
+                        android:singleLine="false"
+                        android:textColor="#008ED9" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="规格型号:" />
+
+                    <TextView
+                        android:id="@+id/specmodel"
+                        style="@style/wj_r_t" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="@string/r_t_pch" />
+
+                    <TextView
+                        android:id="@+id/batchcode"
+                        style="@style/wj_r_t" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout
+                    style="@style/wj_ll_style"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="@string/r_t_kf" />
+
+                    <TextView
+                        android:id="@+id/tv_kf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/btn_select2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="12dp"
+                        android:src="@drawable/kufang" />
+
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout style="@style/wj_ll_style">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="@string/r_t_rks" />
+
+                    <EditText
+                        android:id="@+id/allnums"
+                        style="@style/wj_r_t"
+                        android:layout_marginRight="10dp"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line_left_spcing" />
+
+                <LinearLayout
+                    style="@style/wj_ll_style"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/wj_l_t"
+                        android:text="质检员:" />
+
+                    <TextView
+                        android:id="@+id/tv_inspector"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/btn_select"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="12dp"
+                        android:src="@drawable/kehu" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/bt_confi"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/wj_confirm"
+                    android:text="保存"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/bt_confi"
+                    android:background="@drawable/wj_confirm"
+                    android:text="送检"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

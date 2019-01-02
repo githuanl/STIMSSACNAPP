@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+
+
+    <!-- 头部点击时的颜色 -->
+    <color name="steelblue">#55555555</color>
+
+    <!-- titlebar -->
+    <color name="titlebar">#378EF5</color>
+
+    <!-- 页面背景 -->
+    <color name="bgcolor">#EFEFEF</color>
+
+    <!-- 内容文本颜色 -->
+    <color name="textcolor">#464646</color>
+
+    <!--  状态颜色 #cfcfcf -->
+    <color name="hint_color">#cfcfcf</color>
+
+    <!-- CircleImage -->
+    <color name="circleimage">#7F8286</color>
+
+    <!-- 列表页面背景 -->
+    <color name="allbg">#f6f6f6</color>
+
+    <color name="text_color_checked">#ffffff</color>
+
+    <color name="text_color_unchecked">#666666</color>
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="条  码  号 :" />
+
+            <TextView
+                android:id="@+id/scmid"
+                style="@style/wj_r_t"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/tv_checked"
+                style="@style/wj_r_t"
+                android:gravity="center"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="转移单号:" />
+
+            <TextView
+                android:id="@+id/sbid"
+                style="@style/wj_r_t"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" android:visibility="gone">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="产品编码:" />
+
+            <TextView
+                android:id="@+id/souceid"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+        
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="产品名称:" />
+
+            <TextView
+                android:id="@+id/ljmcc"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="单位:" />
+
+            <TextView
+                android:id="@+id/measure"
+                style="@style/wj_r_t"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="发货单位:" />
+
+            <TextView
+                android:id="@+id/manudept"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="转移数量:" />
+
+            <TextView
+                android:id="@+id/movenum"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="接受数量:" />
+
+            <TextView
+                android:id="@+id/recenum"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="接收单位:" />
+
+            <TextView
+                android:id="@+id/recedept"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="转移时间:" />
+
+            <TextView
+                android:id="@+id/movetime"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style" >
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="入库时间:" />
+
+            <TextView
+                android:id="@+id/receivetime"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/PreviousPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gcjy_left"
+            android:enabled="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/NextPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gcjy_right"
+            android:enabled="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_forced"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/wj_confirm"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="拒收"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_confi"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/wj_confirm"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="收货"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

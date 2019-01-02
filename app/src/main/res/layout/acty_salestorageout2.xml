@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_toolbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:layout_height="30dp">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="@string/r_t_tmh" />
+
+            <TextView
+                android:id="@+id/scmid"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="单据日期:" />
+
+            <TextView
+                android:id="@+id/billdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="客户名称:" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="总金额:" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/checked"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@color/allbg" />
+
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>

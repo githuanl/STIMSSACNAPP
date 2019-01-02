@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/allbg"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_toolbar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="条  码  号:" />
+
+            <TextView
+                android:id="@+id/scmid"
+                style="@style/wj_r_t"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/checked"
+                style="@style/wj_r_t"
+                android:gravity="center"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="产品编码:" />
+
+            <TextView
+                android:id="@+id/souceid"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="产品名称:" />
+
+            <TextView
+                android:id="@+id/soucename"
+                style="@style/wj_r_t"
+                android:textColor="#008ED9" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="加工时间:" />
+
+            <TextView
+                android:id="@+id/jiagtime"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="检验时间:" />
+
+            <TextView
+                android:id="@+id/jianytime"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="员工姓名:" />
+
+            <TextView
+                android:id="@+id/sname"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="工序名称:" />
+
+            <TextView
+                android:id="@+id/material"
+                style="@style/wj_r_t"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="完  工  数:" />
+
+            <TextView
+                android:id="@+id/manunumcis"
+                style="@style/wj_r_t"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/manual"
+                style="@style/wj_r_t"
+                android:gravity="center"
+                android:textColor="@color/titlebar" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/wj_ll_style">
+
+            <TextView
+                style="@style/wj_l_t"
+                android:text="合  格  数:" />
+
+            <TextView
+                android:id="@+id/tv_hg"
+                style="@style/wj_r_t" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:layout_marginLeft="40dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="次 品 数:" />
+
+            <EditText
+                android:id="@+id/cipnumcis"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+                android:gravity="center"
+                android:numeric="decimal"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_ciVerify"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/wj_confirm"
+                android:text="次品处理"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wj_ll_style"
+            android:layout_marginLeft="40dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:gravity="right|center_vertical"
+                android:text="废 品 数:" />
+
+            <EditText
+                android:id="@+id/badnumcis"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+                android:gravity="center"
+                android:numeric="decimal"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_feiVerify"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/wj_confirm"
+                android:text="废品处理"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/PreviousPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gcjy_left"
+            android:enabled="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/NextPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gcjy_right"
+            android:enabled="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_confi"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/wj_confirm"
+            android:enabled="false"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

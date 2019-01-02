@@ -1,0 +1,6 @@
+<resources>
+    
+    <dimen name="acty_title_bar">50dp</dimen>
+    <dimen name="circle_width">4dp</dimen>
+
+</resources>
